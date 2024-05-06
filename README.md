@@ -1,2 +1,2 @@
 # Form
-Form made with HTML CSS and Javascript
+Form made with HTML, internal CSS, and Javascript
