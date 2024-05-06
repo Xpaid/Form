@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      body {
+        background-color: #121212;
+        color: #f0f0f0;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        padding: 2rem;
+        background-color: #1a1a1a;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 4rem;
+      }
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        background-color: #282828;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #333;
+        margin-bottom: 2rem;
+      }
+
+      .name {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        text-align: center;
+      }
+
+      .bio {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        font-style: italic;
+        line-height: 1.5;
+        text-align: center;
+      }
+
+      .content {
+        padding: 2rem;
+        background-color: #282828;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+
+      .details {
+        margin-bottom: 3rem;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .favorites {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(45deg, #fad0c4, #ff9a9e);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+
+      .footer {
+        margin-top: 3rem;
+        font-size: 0.8rem;
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <div class="profile-image"></div>
+        <h1 class="name">Jetro Apilado</h1>
+        <p class="bio">No bio</p>
+      </div>
+      <div class="content">
+        <div class="details">
+          <h2 class="favorites">Details</h2>
+          <h4 class="age">20</h4>
+          <h4 class="gender">Male</h4>
+          <h4 class="address">Philippines</h4>
+          <h4 class="course">BSCS</h4>
+          <h4 class="language"></h4>
+        </div>
+        <h2 class="favorites">Favorites</h2>
+        <h4 class="color"></h4>
+        <h4 class="drinktype"></h4>
+        <h4 class="food"></h4>
+        <h4 class="pet"></h4>
+        <h4 class="number"></h4>
+        <h4 class="band"></h4>
+        <h4 class="song"></h4>
+        <h4 class="message"></h4>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
